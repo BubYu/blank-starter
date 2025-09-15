@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Company Detail</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="index.html">⬅ Back to list</a>
+
+    <!-- VIEW MODE -->
+    <section id="viewMode" class="panel hidden"> 
+      <h2 id="viewTitle">Company</h2>
+      <p><strong>Sector:</strong> <span id="viewSector"></span></p>
+      <p><strong>City:</strong> <span id="viewCity"></span></p>
+      <p><strong>Founded:</strong> <span id="viewFounded"></span></p>
+      <p id="viewWebsiteRow" class="hidden"><strong>Website:</strong> <a id="viewWebsite" target="_blank" rel="noopener"></a></p>
+      <p>
+      <button id="editBtn">Edit</button>
+    <button id="deleteBtn">Delete</button>
+      </p>
+    </section>
+
+    <!-- EDIT mode -->
+    <section id="editMode" class="panel hidden"> 
+      <h2>Edit Company</h2>
+      <div class="row">
+        <div><label class="label" for="editName">Company</label><input id="editName" type="text" /></div>
+        <div><label class="label" for="editSector">Sector</label><input id="editSector" type="text" /></div>
+        <div><label class="label" for="editCity">City</label><input id="editCity" type="text" /></div>
+        <div><label class="label" for="editFounded">Founded</label><input id="editFounded" type="number" min="1900" max="2100" /></div>
+        <div><label class="label" for="editWebsite">Website</label><input id="editWebsite" type="text" placeholder="https://..." /></div>
+      </div>
+      <p><button id="saveEdit">Save Changes</button><button id="cancelEdit">Cancel</button></p>
+    </section>
+
+    <!-- ADD MODE -->
+    <section id="addMode" class="panel floating hidden"> 
+      <h2>Create New Company</h2>
+      <div class="row">
+        <div><label class="label" for="createName">Company</label><input id="createName" type="text" /></div>
+        <div><label class="label" for="createSector">Sector</label><input id="createSector" type="text" /></div>
+        <div><label class="label" for="createCity">City</label><input id="createCity" type="text" /></div>
+        <div><label class="label" for="createFounded">Founded</label><input id="createFounded" type="number" min="1900" max="2100" /></div>
+        <div><label class="label" for="createWebsite">Website</label><input id="createWebsite" type="text" placeholder="https://..." /></div>
+      </div>
+      <p><button id="saveAdd">Save</button><button id="cancelAdd">Cancel</button></p>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="detail.js"></script> 
+  </body>
+</html>

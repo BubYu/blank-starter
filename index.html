@@ -1,18 +1,35 @@
-<!-- preview by entering 'python -m http.server' (no quotes) as a terminal command -->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Empty Starter</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Bay Area Startups & Pioneers</title>
+    <script src="data.js"></script>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
+    <h1>Companies</h1>
 
-    <button id="button">Say Hi</button>
-    
-    <div id="output">hola amiga?</div>
+    <div>
+      <button id="store">Store sample object</button>
+      <button id="load">Retrieve sample object</button>
+      <button id="company">Build Company list (jsDOM table)</button>
+      <a href="detail.html?add=true" style="margin-left:8px;">➕ Add New</a>
+    </div>
+
+    <table id="companyTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Company</th>
+          <th>Sector</th>
+          <th>City</th>
+          <th>Founded</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody id="companyBody"></tbody>
+    </table>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

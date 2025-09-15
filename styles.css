@@ -1,3 +1,22 @@
-body {
-    background-color: yellow;
-}
+/* Basic layout */
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; }
+h1, h2 { margin: 0 0 12px; }
+button, input, select { padding: 8px 12px; margin: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Assignment 4  */
+.hidden { display: none !important; }
+
+/* Table */
+#companyTable { display: none; margin-top: 16px; border-collapse: collapse; width: 100%; } 
+#companyTable th, #companyTable td { border: 1px solid #e49d23; padding: 8px; text-align: left; } 
+#companyTable thead th { background: #e49d23; }
+
+/* Panels  */
+.panel { border: 1px solid #e49d23; padding: 12px; border-radius: 8px; margin: 16px 0; background: #e49d23; } 
+.floating { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
+.label { display:block; font-size: 12px; color: #334155; margin-bottom: 4px; }
+input[type="text"], input[type="number"] { width: 100%; padding: 8px; border: 1px solid #e49d23; border-radius: 6px; }
